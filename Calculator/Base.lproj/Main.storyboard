@@ -53,11 +53,19 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fIL-ye-45b">
                                 <rect key="frame" x="150" y="135" width="30" height="30"/>
                                 <state key="normal" title="计算"/>
+                                <connections>
+                                    <action selector="compute" destination="vXZ-lx-hvc" eventType="touchUpInside" id="5vq-B5-lpm"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="lableResult" destination="Elh-xs-E3p" id="GQ2-GE-yqm"/>
+                        <outlet property="txtNum1" destination="bro-eC-qwf" id="FFZ-Le-qls"/>
+                        <outlet property="txtNum2" destination="JOT-6i-j8S" id="NwS-od-JJE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
