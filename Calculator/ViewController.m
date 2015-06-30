@@ -33,15 +33,18 @@
 - (IBAction)compute {
     
     // 1.获取用户的输入
-    // 2.计算求和
-    // 3.显示结果
     NSString *num1 = self.txtNum1.text;
     NSString *num2 = self.txtNum2.text;
     
+    // 2.计算求和
     int n1 = [num1 intValue];
     int n2 = [num2 intValue];
     int result = n1 + n2;
+    
+    // 3.显示结果
     self.lableResult.text = [NSString stringWithFormat:@"%d",result];
-    NSLog(@"点击了计算");
+    
+    // 4.将键盘自动弹回
+    [self.txtNum2 resignFirstResponder];
 }
 @end
