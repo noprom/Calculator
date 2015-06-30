@@ -45,6 +45,7 @@
     self.lableResult.text = [NSString stringWithFormat:@"%d",result];
     
     // 4.将键盘自动弹回
+    [self.txtNum1 resignFirstResponder];
     [self.txtNum2 resignFirstResponder];
 }
 @end
