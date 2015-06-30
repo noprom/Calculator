@@ -45,7 +45,13 @@
     self.lableResult.text = [NSString stringWithFormat:@"%d",result];
     
     // 4.将键盘自动弹回
-    [self.txtNum1 resignFirstResponder];
-    [self.txtNum2 resignFirstResponder];
+    // 方法一：
+//    [self.txtNum1 resignFirstResponder];
+//    [self.txtNum2 resignFirstResponder];
+    
+    // 方法二：
+    // 让当前view停止编辑， 则键盘自动回去
+    [self.view endEditing:YES];
+    
 }
 @end
